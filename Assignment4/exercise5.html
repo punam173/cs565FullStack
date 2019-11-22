@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       html, body{
+            height: 100%;
+        }
+    </style>
+
+<!--changes the color randomly whenever the user clicks thae button-->
+</head>
+<body>
+    <div id="first" style="height:100%;background-color:grey; ">
+        <button onclick="setRandomColor()" style="margin-left: 600px; margin-top: 25px;">Random Color</button>
+    </div>
+    
+    <script>
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+              color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+          }  
+        function setRandomColor() {
+            document.getElementById("first").style.backgroundColor = getRandomColor(); 
+            
+          }
+    
+    </script>
+    
+</body>
+</html>

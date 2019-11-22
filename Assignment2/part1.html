@@ -25,7 +25,7 @@
                 text-align: center;
             }
             /*all Input boxes*/
-            input[type=text], select {
+            input[type=text] {
                 width: 100%;
                 padding: 12px 20px;
                 margin: 8px 0;
@@ -54,6 +54,11 @@
             #sub{
                 margin-left: 65px;    
             }
+            textarea{
+                border-radius: 4px;
+                display: inline-block;
+                border: 1px solid #ccc;
+            }
             
         </style>
 
@@ -64,16 +69,18 @@
         <div>
             <header><h3> Contact Us</h3></header>
             <section>
-                <form action="/action_page.php">
-                <input type="text" id="name" placeholder="Name">
-                <input type="text" id="email" placeholder="Email">
-                <input type="text" id="message">
-                </form>
+                <form action="/action_page.php" id="user">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="text" id="email" placeholder="Email">
+                    <!-- <input type="text" id="message"> -->
+                </form>  
             </section>
-            <footer>
-                <input type="submit" id="sub">
-                <input type="reset" id="re">
-            </footer>
+            <textarea  id = "a" rows ="7" cols="37.9" name="message" form="user" placeholder="  Message"></textarea>
+            <input type="submit" id="sub">
+            <input type="reset" id="re">
+                
+    
+      
                 
         </div>
         

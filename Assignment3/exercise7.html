@@ -1,0 +1,58 @@
+<!-- @author: Punam Pal-->
+<!--Layout option using CSS Grid-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+<style>
+    .header{ grid-area: header;}
+    .nav{ grid-area: nav;}
+    .main{ grid-area: article;}
+    .footer{ grid-area: footer;}
+
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+            'header header header'
+            'nav article article'
+            'footer footer footer';
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-columns: 100px;
+        grid-gap: 10px;
+        height: 400px;
+        margin: 0;
+        /* padding: 10px; */
+       
+    }
+    .grid-container > div {
+        background-color: rgb(75, 73, 73);
+        border-radius: 0.2em;
+        padding: 20px 0;
+        color: white;
+        text-align: top;
+        padding-left: 10px;
+        padding-top: 5px;
+    
+    }
+    body{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        width: 70%;
+    }
+</style>
+</head>
+
+<body>
+    <h2>Layout using: CSS Grid</h2>
+    <div class="grid-container">
+        <div class="header">One</div>
+        <div class="nav">Two</div>
+        <div class="main">Three</div>  
+        <div class="footer">Four</div>
+    </div>
+</body>
+</html>

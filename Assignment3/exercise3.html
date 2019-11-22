@@ -1,0 +1,55 @@
+<!--@author: Punam Pal-->
+<!--Layout option using inline-block-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Normal Flow(inline-block)</title>
+    <style>
+        .box{
+            display: inline-block;
+            width: calc(15%);
+            height: 50px;
+            background: rgb(88, 87, 87);
+            color: white;
+            border-radius: 0.5em;
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 10px;
+        }
+        .firstrow{
+            margin-top:30px;
+        }
+        body{
+            margin-left: 200px;
+            margin-top: 100px;
+          
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>Layout option: Inline-block</h3>
+    <div  class="firstrow"> 
+        <div class="box" id="one">One</div>
+        <div class="box" id="two">Two</div>
+        <div class="box" id="three">Three</div>
+        <div class="box" id="four">Four</div>
+    </div>
+    <div  class="secondrow"> 
+            <div class="box" id="five">Five</div>
+            <div class="box" id="six">Six</div>
+            <div class="box" id="seven">Seven</div>
+            <div class="box" id="eight">Eight</div>
+            
+    </div>
+    <div  class="thirdrow"> 
+            <div class="box" id="nine">Nine</div>
+            <div class="box" id="ten">Ten</div>
+            <div class="box" id="eleven">Eleven</div>
+            <div class="box" id="twelve">Twelve</div>
+    </div>
+</body>
+</html>

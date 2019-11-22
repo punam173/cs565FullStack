@@ -1,0 +1,31 @@
+<!--@author: Punam Rani Pal-->
+<!--Print allmthe number from 1 tp 100 with some exception to console log-->
+<!--prints fizz for number divisible by 3-->
+<!--prints bizz for the number divisible by  but not 3-->
+<!--fizzbuzz for the number divisible by both 3 and 5-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FizzBuzz</title>
+</head>
+<body>
+        <h2>Prints 1 to 100 using console log</h2>
+        <script>
+                var i = 1;
+                for(i = 1; i <= 100; i++){
+                    if( i % 3 === 0 && i%5 ===0){
+                        console.log("fizzbuzz");
+                    }else if ( i % 5 ===0 && i % 3 !== 0 ){
+                        console.log("buzz");
+                    }else if ( i % 3 === 0){
+                        console.log("fizz");
+                    }else{
+                        console.log(i);
+                    }
+                }
+        </script>
+</body>
+</html>

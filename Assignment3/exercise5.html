@@ -1,0 +1,84 @@
+<!-- @author: Punam Pal-->
+<!--Layout option using Float-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position(static,relative,absolute,fixed)</title>
+    <style>
+        body{
+            width: 70%;
+            margin: 0px auto;
+            margin-top: 100px;
+        }
+        .boxes{
+        
+            /* text-align: center; */
+             padding: 20px;
+            
+        } 
+        .box{
+            /* margin: 0px auto; */
+            color: white;
+            padding: 15px;
+            border-radius: 0.7em;
+            background-color: rgb(68, 67, 67);
+            border: 2px solid white;
+            /* width: calc(100%); */
+        }
+        #two{
+            width: calc(50% - 34px);
+            height: 120px;
+    
+        }
+       
+        #three{
+            width: calc(50% - 4px);
+            float: right;
+            height: 150px;
+            margin: 0;
+            padding:0;
+            background-color: white;  
+        }
+        .box1{
+            width: 100%;
+            display: block;
+            margin-right:0px;
+            padding:0;
+            height: 72px;
+            border-radius: 0.7em;
+            border: 2px solid white;
+            background-color: rgb(68, 67, 67);
+            
+        }
+        #five{
+            width: calc(50% - 4px);
+            float: right;
+        }
+        #four{
+            width: calc(50% - 4px);
+            float: right;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h2>Layout option: block and float</h2>
+    <div class="boxes"> 
+            <div class="box" id="one">One</div>
+            <div class="box" id="three"> 
+                    <div class="box1" id="Three1"><span  style="margin-left: 15px;">Three</span></div>
+                    <div class="box1" id="five"><span  style="margin-left: 15px;">Five</span></div>
+                    <div class="box1" id="four"><span  style="margin-left: 15px;">Four</span></div>
+            </div>
+      
+            <div class="box" id="two">Two</div>
+            
+            
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!--@author: Punam Pal-->
+<!--only html elements of PSU website-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PSU Website</title>
+    <style>
+        header{
+            background-color: rgb(80, 110, 9);
+        }
+        #navigation1{     
+            width:250px; 
+            margin-left: 1250px; 
+            text-align: center;   
+            padding: 20px;
+            background-color:rgb(101, 138, 16);
+            transform: skewX(-20deg);
+        }
+        #CAM{
+            color: white;
+            writing-mode: horizontal-tb; 
+            text-decoration: none;
+            background-color:rgb(101, 138, 16);
+        }
+        #CAM:hover{
+            color: rgb(137, 245, 37);
+        }
+        #arrowcolor{
+            color: rgb(137, 245, 37);
+        }
+        #logo{
+            margin-left: 30px;
+        }
+        #hidden1{
+            
+            display:none;
+        }
+        #navigation2 h2{
+                /*visibility: hidden;*/
+                display:none;
+        }
+        #navigation2 ul li{
+            display: inline;  
+            direction: ltr;
+        }
+        #navigation2 ul li a{
+            color: white;
+            text-decoration: none; 
+            float: right;
+        }
+        #Search-Action h2{
+            display: none;
+        }
+        #Search-Action{
+            float: right;
+            margin-right: 60px;
+        }
+        #entry{
+            width: 170px;
+            height: 20px;
+        }
+        #main-menu-navigation ul li{
+            display:inline;
+            padding: 10px;
+        }
+        #main-menu-navigation ul li a{
+            text-decoration: none;
+            color:white;
+            font-size: 20px;
+        }
+        section{
+            background-color: rgb(70, 67, 67);
+        }
+        #Middle-content{
+            position: relative;
+        }
+        #pic1{
+            display:block;
+            margin-left: 150px;
+            margin-right:50px;
+            width: 82%;
+        
+        }
+        .overlay {
+            position: absolute;
+            bottom: 60px;
+            left: 20px;
+            margin-left: 200px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color:  rgb(70, 67, 67);
+            opacity: 0.7;
+           
+        }
+        .overlay a {
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            
+        }
+        #content2{
+            background-color: rgb(240, 231, 231);
+            border-spacing: 15px 25px;
+        }
+        #table1{
+            border-spacing: 15px 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+        #title span {
+            color: white; 
+            text-align: center;   
+            padding: 10px;
+            background-color: rgb(70, 67, 67);
+        }
+        #table2{
+            border-spacing: 15px 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+        #title2 span {
+            color: white; 
+            text-align: center;   
+            padding: 10px;
+            background-color: rgb(70, 67, 67);
+        }
+        footer{
+            background-color: rgb(80, 110, 9);      
+        }
+        #last{
+            color: white;
+            text-align: center;
+        }
+            
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div id = "navigation1">
+                    <a href = "#" id="CAM">
+                        THE CAMPAIGN FOR PSU
+                        <span id="arrowcolor"> >> </span>
+                    </a>
+        </div>       
+        <div id = "navigation2">
+            <h2>
+                Utility Navigation
+            </h2>
+            <ul>
+                <li id = "nav-1">
+                    <a href = "#">
+                        Quick Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </a>
+                 </li>
+                <li id = "nav-2">
+                    <a href = "#">
+                        Contact /&nbsp;&nbsp;
+                    </a>
+                </li>
+                <li id = "nav-3">
+                    <a href = "#">
+                        myPSU /&nbsp;&nbsp;
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id ="skip_link">
+            <a href = "#" id = "logo">
+                <img src = "https://www.pdx.edu/sites/all/themes/pdx_respond/images/psu-logo.png"alt = "Home" width="350px" height="75px">
+            </a>
+            <a href = "#" id="hidden1">
+                <br>Skip to main content
+            </a>    
+        </div>
+        <div id = "Search-Action">
+            <form action = "/.action.php">
+                <h2>
+                    Search Portland state
+                </h2>
+                <input title = "Enter the terms you wish to search for." type = "text" id ="entry">
+                <input type = "submit" value = "Search">
+            </form>
+        </div>
+        <div id = "main-menu-navigation">
+            <ul id = "main-menu">
+                <li>
+                    <a href = "#" title = "Admission">
+                        Admissions
+                    </a>
+                </li>
+                <li>
+                    <a href = "#" title = "Schools & Colleges">
+                        Schools & Colleges
+                    </a>
+                </li>
+            
+                <li>
+                    <a href = "#">
+                        Academic Programs
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        Campus
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        Athletics
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        Library
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        Research
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        Giving
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        About PSU
+                    </a>
+                </li>  
+            </ul>
+            <br>
+        </div>
+    </header>
+    <section>
+        <div id = "Middle-content">
+            <a href = "#" id= "big-picture">
+                <img src = "https://www.pdx.edu/sites/default/files/styles/pdx_home_top_feature/public/Media%20Root/Financial-Wellness-Main.jpg?itok=4hmkMYxg" 
+                alt = "Content-Image" id="pic1">
+            </a>
+            <span class = "overlay">
+                <a href = "#" >
+                    <h2>Get into a Portland state of Mind</h2>
+                    <h4>You're invited to our annual gestival of knowledge and culture, oct. 10-20 >></h4>
+                </a>
+            </span>
+        </div>
+        <div id = "content2">
+            <table id="table1">
+                <tr id="title"> 
+                    <td><span>Research</span> </td>
+                    <td><span>Spotlight</span></td>
+                    <td><span>Alumni</span></td>
+                </tr>
+                <tr>
+                    <td><a herf = "#">
+                        <img id="1" src="https://www.pdx.edu/sites/default/files/styles/pdx_home_row_feature/public/Media%20Root/Image%20for%2010.25.19.jpg?itok=N6dUEqWC"></a></td>
+                    <td><a herf = "#">
+                        <img id="2" src="https://www.pdx.edu/sites/default/files/styles/pdx_home_row_feature/public/Media%20Root/Students-15.jpg?itok=emjU0jaK"></a></td>
+                    <td><a herf = "#">
+                        <img id="3" src="https://www.pdx.edu/sites/default/files/styles/pdx_home_row_feature/public/Media%20Root/mario-milosevic.JPG?itok=W2-HKtXd"></a></td>
+                </tr>
+                <tr>
+                    <td><a href = "#"><b>PSU receives $19.3M rant to<br> help underrepresented students<br> conduct research</b></a></td>
+                    <td><a href = "#"><b>Fostering Student Success</b></a></td>
+                    <td><a href = "#"><b>Art Accessibility</b></a></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><a href = "#"> Build Exito, which supports students reseach<br>success, renewed for another five years >></a></td>    
+                    <td><a href = "#">PSU expans all campys sfforts to help students<br>graduate >></a></td>
+                    <td><a href = "#">Alumna promotes atr as a means of inspiration,<br>education and social justice</a></td>
+                </tr>
+            </table><br>
+            <table id = "table2">
+                <tr id="title2"> 
+                    <td><b><span>CAMPAIGN FOR PSU</span> </b></td>
+                    <td><b><span>Admissions</span></b></td>
+                    <td><b><span>Programs</span></b></td>
+                </tr>
+                <tr>
+                    <td><a herf = "#">
+                        <img id="4"src="https://www.pdx.edu/sites/default/files/styles/pdx_home_row_feature/public/Media%20Root/20190903_PSUFoundation_178_HiRes-rv.jpg?itok=yWJaloAv"></a></td>
+                    <td><a herf = "#">
+                        <img id ="5" src="https://www.pdx.edu/sites/default/files/styles/pdx_home_row_feature/public/Media%20Root/10-25-19%20Apply%20Now.jpg?itok=hlNL_0bK"></a></td>
+                    <td><a herf = "#">
+                        <img id="6"src="https://www.pdx.edu/sites/default/files/styles/pdx_home_row_feature/public/Media%20Root/GPS%20program%20spotlight.jpg?itok=EfJLud1c"></a></td>
+                </tr>
+                <tr>
+                    <td><a href = "#"><b>Home is where you belong</b></a></td>
+                    <td><a href = "#"><b>Paying for college</b></a></td>
+                    <td><a href = "#"><b>Become a global professional</b></a></td>
+                </tr>
+            </table>
+        </div></section>
+    <footer>
+        <div id = "last">
+            <h2>Accessibility Statement</h2>
+            <p>Portland State University is committed to making its website accessible for all users. 
+                For more information, or if you wish to report an issue<br> related to website accessibility, 
+                please see the Accessibility page to contact the EIT Accessibility Coordinator.  
+                If you wish to file a complaint<br> (grievance) regarding the accessibility of web content, 
+                you may do so by completing an online complaint form through the Equity <br>& Compliance webpage. </p>
+        </div>  
+    </footer>
+      
+</body>
+</html>

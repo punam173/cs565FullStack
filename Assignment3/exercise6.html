@@ -1,0 +1,132 @@
+<!-- @author: Punam Pal-->
+<!--Layout Option using Css Flex Box-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout Flex box</title>
+    <style>
+body{
+    margin: 100px;;
+}
+    .container {
+  display: flex;
+  flex-flow: row;
+  min-height: 15px;
+  width: 70%;
+  color: white;
+}
+.left {
+  flex: 1;
+  margin:2px;
+  height: 200px;
+}
+.main {
+  width: 60%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  
+}
+.col {
+  margin: 2px;
+
+}
+.top {
+    padding-bottom:25px;
+    height: 100px;
+  }
+
+.d, .bottom, .middle{
+  margin:2px;
+  height: 33px;
+ 
+}
+.c{
+    background-color: rgb(78, 75, 75);
+}
+
+/* 
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-container > div {
+            background-color: rgb(75, 73, 73);
+            border-radius: 0.2em;
+            padding: 20px 0;
+            color: white;
+            text-align: top;
+            padding-left: 10px;
+            padding-top: 5px;
+            margin-bottom: 5px;
+    
+        }
+        .one{
+            flex:1;
+        }
+        .two{
+            flex: 2;
+            /* width:0%; */
+        /* }
+        .flex-second{
+            display: flex;
+            flex-direction: row; */
+            /* margin-bottom: 10px; */
+            /* display: inline-block; */
+            /* border: 1px solid white; */
+        
+        /* }
+        .one{
+            width:10%;
+            height: 100%;
+            margin: 5px;
+        } */
+        /* .three{
+            flex:1;
+        }  */
+        /* .flex-second > div {
+        
+            border-radius: 0.2em;
+            /* padding: 20px 0; */
+            /* color: white; */
+            /* text-align: top; */
+            /* padding-left: 10px;
+            padding-top: 5px; */
+            /* margin-bottom: 5px; */
+            /* border: 2px solid white; */
+            /* display:inline-block; */
+            /* padding: 5px; */
+    
+        /* } */
+    
+    </style>
+</head>
+<body>
+    <!-- <div class="flex-container">
+        
+        <div class="flex-second">
+            <div class="one">One</div>
+            <div class="two">Two</div>  
+             <div class="three">Three</div> -->
+        <!-- </div>
+        <div class="footer">Five</div>
+    </div>  -->
+    <h3>Layout Option: Css FlexBox</h3>
+
+    <div class="container">
+            <nav class="nav left c">One</nav>
+            <section class="main">
+              <div class="col top c">Two</div>
+              <div class="col middle c">Three</div>
+              <div class="col bottom c">Four</div>
+            </section>
+          </div>
+          <div class="container">
+              <nav class="nav left d c">Five</nav>
+          </div>
+</body>
+</html>

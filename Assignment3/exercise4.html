@@ -1,0 +1,84 @@
+<!-- @author: Punam Pal-->
+<!--Layout option using float-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin:0;
+        padding: 0;
+    }
+   .wrapper > div{
+        background-color: rgb(75, 73, 73);
+        border-radius: 0.4em;
+        padding: 15px;
+        color: white;
+        text-align: left;
+        /* padding-left: 10px;
+        padding-top: 5px; */
+        /* margin: 5px; */
+        border: 2px solid white;
+    }
+    
+    .one {
+        width: calc(25% - 34px); 
+        float: left;
+    }
+    /* .seven{
+        margin-top: 30px;
+    } */
+    .three{
+        width: calc(25% - 34px); 
+        float: left;  
+    } 
+    .five{
+        width: calc(25% - 34px); 
+        float: left;  
+    }
+    .two {
+        width: calc(75% - 34px);
+        float: left;  
+    }
+    .four{
+        width: calc(75% - 34px);
+        float: left; 
+    } 
+    .six{
+        width: calc(75% - 34px);
+        float: left; 
+    }
+    .seven{
+        clear: left;
+    }
+   
+    .wrapper{
+        padding: 10px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+    } 
+
+</style>   
+    
+<body> 
+    <div class="wrapper">
+            <h2>Layout option - Float</h2>
+            <div class="one">One</div>
+            <div class="two">Two</div>
+            <div class="three">Three</div>  
+            <div class="four">Four</div>
+            <div class="five">Five</div>
+            <div class="six">Six</div>
+            <div class="seven">Seven</div>
+    </div>
+
+            
+    
+</body>
+</html>

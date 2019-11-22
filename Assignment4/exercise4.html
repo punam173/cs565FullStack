@@ -1,0 +1,28 @@
+<!--output the width and heigt of the window any tim ethe window is resized-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>The width of the web page is: <span id = "width"></span></h3>
+    </div>
+    <div>
+        <h3>The heigth of the web page is: <span id = "height"></span></h3>
+    </div>
+    <script>
+        window.onresize = displayWindowSize;
+        window.onload = displayWindowSize;
+        function displayWindowSize() {
+            document.getElementById("width").innerHTML = window.innerWidth;
+            document.getElementById("height").innerHTML = window.innerHeight;
+        };
+        
+    </script>
+    
+</body>
+</html>

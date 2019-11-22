@@ -1,0 +1,73 @@
+<!--Output the data from the form in the format-->
+<!--whenever the user submit the form-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>             
+    <style>
+        /*backgroud color */
+            body{
+                background-image: linear-gradient(to right,rgb(10,180,10) ,rgb(250,250,20));
+            }
+            /*contact form */
+            .Container{
+                background-color: white;
+                width: 300px;
+                height: 450px;
+                margin: auto;
+                border-radius: 5px;
+                padding: 20px;
+                position: relative;
+                margin-top: 100px;
+               
+            }                    
+    </style>
+            
+</head>
+<body>  <!-- This code represents a form format -->
+    <!-- Takes name and email-->
+    <div class="Container"> 
+       <form   onsubmit="event.preventDefault(); sConsole();" onreset="rConsole();">
+           <div class="form-group">
+                <h4 class="text-center text-uppercase font-weight-bold">Contact Us</h4>
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr">
+            
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email">
+                         
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-space" href="#">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+
+       </form>                    
+    </div>
+    <script>
+        function sConsole() {
+            var data = document.getElementById("usr");
+            console.log("name: " + data.value); // data is the element, and we want its value
+            var data = document.getElementById("email");
+            console.log("email: " + data.value);
+            var data = document.getElementById("comment");
+            console.log("message: " + data.value);
+      }
+      function rConsole() {
+        console.log("name: " + ""); // data is the element, and we want its value
+        console.log("email: " + "");
+        console.log("message: " + "");
+      }
+    </script>
+
+</body>
+</html>
